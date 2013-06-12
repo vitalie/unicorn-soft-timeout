@@ -28,11 +28,11 @@ Edit your config.ru file and load the Unicorn::SoftTimeout middleware:
     # config.ru
     require 'unicorn/soft_timeout'
 
-    # Specify your soft timeout, it should be a lower value
-    # than **timeout** specified in your unicorn config.
+    # Specify your soft timeout (default 12 seconds), it should
+    # be a lower value than **timeout** specified in your unicorn config.
     # This extension will raise Timeout::Error when reaching
-    # the **soft timeout**
-    use Unicorn::SoftTimeout, 12
+    # the **soft timeout**.
+    use Unicorn::SoftTimeout, 10
 
 ## Contributing
 
