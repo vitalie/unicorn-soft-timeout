@@ -34,6 +34,11 @@ Edit your config.ru file and load the Unicorn::SoftTimeout middleware:
     # the **soft timeout**.
     use Unicorn::SoftTimeout, 10
 
+## Credits
+
+* [Kazuki Ohta](https://github.com/kzk)
+* [Pierre Baillet](https://github.com/octplane)
+
 ## Contributing
 
 1. Fork it
