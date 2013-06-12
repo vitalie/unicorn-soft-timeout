@@ -1,4 +1,4 @@
-# Unicorn::SoftTimeout
+# unicorn-soft-timeout
 
 This gem adds support for **soft timeout** in [Unicorn](http://unicorn.bogomips.org/)
 configurations, by default requests which are taking longer than configured `timeout` are
