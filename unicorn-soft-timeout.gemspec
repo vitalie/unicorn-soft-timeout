@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Vitalie Cherpec"]
   spec.email         = ["vitalie@penguin.ro"]
   spec.description   = %q{Graceful handling of requests which are reaching the timeout limit to avoid SIGKILL}
-  spec.summary       = %q{Unicornorn soft timeout}
+  spec.summary       = %q{Unicorn soft timeout}
   spec.homepage      = "https://github.com/vitalie/unicorn-soft-timeout"
   spec.license       = "MIT"
 
