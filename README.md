@@ -1,12 +1,12 @@
 # Unicorn::SoftTimeout
 
 This gem adds support for **soft timeout** in [Unicorn](http://unicorn.bogomips.org/)
-configurations, by default requests which are taking longer than configured _timeout_ are
+configurations, by default requests which are taking longer than configured `timeout` are
 [SIGKILL-ed](http://unicorn.bogomips.org/Unicorn/Configurator.html#method-i-timeout).
 
-In some cases we need to intercept requests which will reach _timeout_ to display a
-custom content instead of the error page. This extension will raise Timeout::Error
-when reaching the _soft timeout_ and will restart the worker sending a SIGQUIT
+In some cases we need to intercept requests which will reach `timeout` to display a
+custom content instead of the error page. This extension will raise `Timeout::Error`
+when reaching the soft timeout and will restart the worker sending a `SIGQUIT`
 signal to it.
 
 ## Installation
