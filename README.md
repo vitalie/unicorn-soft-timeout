@@ -9,6 +9,8 @@ custom content instead of the error page. This extension will raise `Timeout::Er
 when reaching the soft timeout and will restart the worker sending a `SIGQUIT`
 signal to it.
 
+  - [![Build Status](https://travis-ci.org/vitalie/unicorn-soft-timeout.svg?branch=master)](https://travis-ci.org/vitalie/unicorn-soft-timeout)
+
 ## Installation
 
 Add this line to your application's Gemfile:
