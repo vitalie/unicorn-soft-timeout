@@ -3,16 +3,16 @@ cache: bundler
 before_install:
   - gem install bundler
 rvm:
-  - 2.1.1
-  - 2.0.0
-  - 1.9.3
-  - jruby-19mode # JRuby in 1.9 mode
-  - rbx-2
+  - 2.3
+  - 2.4
+  - ruby-head
+  - jruby-23mode
+  - jruby-head
+  - rubinius-3
 matrix:
   allow_failures:
-    - rvm: rbx-2
-    - rvm: 2.1.1
-    - rvm: 2.0.0
-    - rvm: jruby-19mode # JRuby in 1.9 mode
-    - rvm: rbx-2
+    - rvm: ruby-head
+    - rvm: jruby-head
+    - rvm: jruby-23mode
+    - rvm: rubinius-3
   fast_finish: true

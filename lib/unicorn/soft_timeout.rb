@@ -1,4 +1,4 @@
-require "unicorn/soft_timeout/version"
+require 'unicorn/soft_timeout/version'
 
 module Unicorn
   module SoftTimeout
@@ -18,7 +18,7 @@ module Unicorn
         sleep(@_soft_timeout)
         logger.warn "#{self}: worker (pid: #{worker_pid}) exceeds soft timeout (limit: #{@_soft_timeout})"
         Process.kill :QUIT, worker_pid # graceful shutdown
-        current_thread.raise Timeout::Error.new("Soft timeout exceeded")
+        current_thread.raise Timeout::Error.new('Soft timeout exceeded')
       end
 
       super(client) # Unicorn::HttpServer#process_client
@@ -26,4 +26,3 @@ module Unicorn
     end
   end
 end
-
